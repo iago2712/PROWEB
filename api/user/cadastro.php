@@ -1,3 +1,4 @@
+
 <?php
 require_once '../db.php';
 
@@ -14,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     
     if ($conn->query($sql) === TRUE) {
         
-        header('Location: ../../index.html');
+        header('Location: ../../projeto/login.html');
         exit();
     } else {
         echo "Erro ao inserir dados: " . $conn->error;
@@ -26,5 +27,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     echo "Método de requisção invalido!";
 }
 
-$conn -> close;
+$conn -> close();
 ?>

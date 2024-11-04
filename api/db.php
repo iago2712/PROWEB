@@ -4,10 +4,10 @@
 // db.php
 function getDbConnection() {
 
-    $servername = "localhost";
+    $servername = "localhost:3306";
     $username = "root";
     $password = "";
-    $dbname = "banco1";
+    $dbname = "pokemon";
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {

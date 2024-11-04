@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background-image: url(../../img/pokedex.png); 
+  background-size: cover;
+}
+
+.button {
+  width: 300px;
+  height: 50px;
+  font-size: 18px; 
+  background-color: rgb(240, 206, 12); 
+  color: rgb(0, 0, 0);
+  border: solid 10px rgb(14, 74, 202); 
+  border-radius: 5px; 
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botÃ£o */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease; /* Efeito de transiÃ§Ã£o para hover */
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Ajusta para centralizar corretamente */
+}
+
+.button:hover {
+  background-color: rgb(14, 74, 202);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+  
+.card {
+  width: 200px;
+  height: 320px; /* Altura ajustada para acomodar novos elementos */
+  border-radius: 15px;
+  background-color: #ffcccb; /* Rosa claro */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  text-align: center;
+  border: 5px solid #FFD700; /* Borda amarela mais espessa */
+  position: relative; /* Para posicionar o tipo do Pokémon */
+}
+
+.card-head {
+  width: 100%;
+}
+
+.card-head h3 {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.card-type {
+  background-color: #ff4757; /* Cor do tipo */
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute; /* Para posicionar sobre a carta */
+  top: 15px; /* Distância do topo */
+  left: 50%; /* Centralizar horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centralizar */
+}
+
+.card-img {
+  width: 150px; /* Limitar a largura da imagem */
+  height: 150px; /* Definir uma altura fixa */
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 4px solid #FFD700; /* Borda amarela ao redor da imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  width: 100%;
+}
+
+.card-body p {
+  color: #333;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between; /* Espaço entre os elementos de estatísticas */
+  margin-top: 10px;
+}
+
+.stat {
+  font-size: 14px;
+  color: #333;
+}
+
+.attack-icon::before {
+  content: '⚔️'; /* Ícone de ataque */
+  margin-right: 5px; /* Espaço entre ícone e texto */
+}
+
+.button {
+  width: 500px;
+  height: 150px;
+  font-size: 30px; 
+  background-color: rgb(240, 206, 12); 
+  color: rgb(0, 0, 0);
+  border: solid 10px rgb(14, 74, 202); 
+  border-radius: 5px; 
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botÃ£o */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease; /* Efeito de transiÃ§Ã£o para hover */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Ajusta para centralizar corretamente */
+}
+
+.button:hover {
+  background-color: rgb(14, 74, 202);
+}

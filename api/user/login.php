@@ -16,16 +16,18 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST'){
         $user   = $result->fetch_assoc();
 
         if ($senha === $user['senha']){
-            echo "Login Realizado com sucesso";
+            setcookie("cookie_randomizer", $user['nome'], time() + 3600, "/");
+            header('Location: ../../projeto/loby.php');
+            exit();
         } else {
-            echo "Login falhou";
+            header('Location: ../../projeto/loginerror1.html');
         }
     } 
     else {
-        echo "Usuário não encontrado!";
+        header('Location: ../../projeto/loginerror2.html');
     }
 } else {
-    echo "Método de aquisição invalido";
+    header('Location: ../../projeto/loginerror3.html');
 }
 $conn -> close();
 ?>
